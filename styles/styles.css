@@ -429,10 +429,13 @@ nav a.active:hover::after {
   padding: 2rem;
   background: #052953;
   color: white;
+  border: none;
 }
 
-.form-section form buttonfocus {
+.form-section form button:focus {
   background: #5c89a3;
+  font-weight: bold;
+  outline: 2px solid black;
 }
 
 footer {

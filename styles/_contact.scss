@@ -28,8 +28,11 @@
       padding: 2rem;
       background: $background-color;
       color: white;
-      &focus {
+      border: none  ;
+      &:focus {
         background: rgb(92, 137, 163);
+        font-weight: bold;
+        outline: 2px solid black;
       }
     }
   }
