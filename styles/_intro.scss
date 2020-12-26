@@ -19,6 +19,31 @@ nav {
     @include flex(space-around, center, row);
     flex: 1 1 40rem;
   }
+  a {
+    position: relative;
+    font-weight: 500;
+    transition: 0.5s;
+    &.active:hover {
+      opacity: 0.9;
+    }
+  }
+  a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: $gray-text;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+  }
+  a:hover::after {
+    width: 100%;
+    transition: 400ms ease-in-out;
+  }
+  a.active:hover::after {
+    width: 0;
+  }
+
 }
 
 .intro {
@@ -59,6 +84,12 @@ nav {
   margin-top: 4rem;
   a {
     margin-right: 5rem;
+  }
+  img {
+    transition: 300ms;
+    &:hover {
+      transform: translateY(-5px)
+    }
   }
 }
 
