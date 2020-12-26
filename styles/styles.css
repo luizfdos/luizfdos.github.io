@@ -496,20 +496,43 @@ footer img {
   .splash {
     display: none;
   }
-  svg {
-    width: 80%;
+  .intro {
+    width: 90%;
+  }
+  .intro .intro-text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 35vw;
+            flex: 1 1 35vw;
+  }
+  .intro svg {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+    width: 70rem;
   }
   nav {
     width: 100%;
   }
 }
 
+@media screen and (max-width: 1130px) {
+  .intro svg {
+    width: 55rem;
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .intro svg {
+    width: 70%;
+  }
+  .intro-images {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 754px) {
   html {
     font-size: 45%;
-  }
-  svg {
-    height: 60%;
   }
   .main-head {
     width: 100%;
